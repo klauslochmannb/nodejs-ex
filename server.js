@@ -73,6 +73,12 @@ app.get('/', function (req, res) {
       res.render('index.html', { pageCountMessage : count, dbInfo: dbDetails });
     });
   } else {
+		int a = 0;
+	  for(int i = 0; i < 1000; i ++) {
+		for(int j = 0; j < 1000; j ++) {
+			a += j - i;
+		}
+	  }
     res.render('index.html', { pageCountMessage : null});
   }
 });
